@@ -11,7 +11,7 @@ query ($page: Int, $perPage: Int, $search: String, $averageScore: Int, $genre: S
             hasNextPage
             perPage
         }
-        media (search: $search, averageScore: $averageScore, genre: $genre, seasonYear: $seasonYear, season: $season) {
+        media (type: ANIME, search: $search, averageScore: $averageScore, genre: $genre, seasonYear: $seasonYear, season: $season) {
             
             title {
                 romaji
